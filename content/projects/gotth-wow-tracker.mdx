@@ -1,0 +1,41 @@
+---
+title: GoTTH Stack WoW-Tracker
+summary: A web-app built using the GoTTH-stack to track mythic-plus progression.
+image:
+author: "Martin Leo"
+publishedAt: 2025-07-10
+---
+
+A simple web-app for tracking some information about World of Warcraft characters. A user can import their character and see some information about that characters equipped gear, talents, and mythic+ progression.
+
+## Tech Stack
+
+The idea for this app was to learn a new stack that I had gotten a chance to look at during an internship.
+
+- [**_Go_**](https://go.dev/)
+- [**_Templ_**](https://templ.guide/)
+- [**_Tailwind_**](https://tailwindcss.com/)
+- [**_HTMX_**](https://htmx.org/)
+- [**_MongoDB_**](https://www.mongodb.com/)
+
+Go is used for the backend and server-side rendering. Templ for templating and components. Tailwind for styling and HTMX for interactivity. MongoDB was used to store the information about characters after fetching them using Blizzards API.
+
+The stack seems to work quite well with building small to medium projects that does not require a lot of client-side interactivity and the simplicity of it appeals to me. Also, Go seems like a good middle-point between the "looseness" of Javascript and the strictness of Java or C.
+
+## Features
+
+- **_Easily track character information_**: World of Warcraft is a complex game with many systems, sometimes it can be hard to keep track of all the information so the idea was to collect certain information and present it in a neat way to simplify getting the information that was sought.
+- **_Simple and Fast_**: Go is quick and makes loading in the information and presenting it to user quite fast, and the goal was to try to do it with a pretty simple and not overly cluttered UI.
+
+## Challenges
+
+Overall the project was relatively easy, even with my lack of previous experience. A lot of the technologies used are quite simple and intuitive and the documentation is robust.
+
+Working with the Blizzard API was sometimes a bit tedious, if nothing else because of the sheer amount of data they track. Finding and picking out the right information could be a challenge at times.
+
+## Future Improvements
+
+One could most likely keep building this out as much as one would want to. I would like to keep building on it and bring in some more information from the Blizzard API to add in additional features or information to track.
+
+I would like to refactor the code at some point as well, taking into the lesson I learned and applying those to make the code-base cleaner and better structured.
+

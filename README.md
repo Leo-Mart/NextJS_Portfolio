@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio built using NextJS, Tailwind, and MDX-files
 
-## Getting Started
+This is a small project with the aim to build a portfolio to showcase some of my work and potentially act as a small blog as I navigate the tech-world.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The stack uses NextJS which has proven to be really quite nice to work with.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [**_NextJS_**](https://nextjs.org/)
+- [**_MDX_**](https://mdxjs.com/)
+- [**_Tailwind_**](https://tailwindcss.com/)
+- [**_Vercel_**](https://vercel.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+NextJS lets me create a statically rendered page with relative ease while using MDX to create Markdown files (like this one!) and then read them and convert to HTML which lets me quite easily create new blog posts or project pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tailwind was used to style the project.
 
-## Learn More
+Vercel plugs neatly into NextJS which simplifies deploying the project.
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Static pages for a tidy user experience.
+- I'm no designer but I am pretty happy with the styling.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Inspiration and Help
 
-## Deploy on Vercel
+While I have written all the code myself I took a lot of help and inspiration from a few folks around the web. [Timmy O'Mahony](https://timmyomahony.com/)'s portfolio and accompanying Github rep. This [article](https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss) by Manu Arora and his Github Repo. And this [youtube video](https://www.youtube.com/watch?v=hSi_x29bBmE) by Web Dev Simplified and Hamed Bahram. All of these have been very helpful and a huge shoutout to these folks for sharing their knowledge and code.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- FIx some styling for the MDX files.
+- Potentially fully responsive design.
+- Keep adding new projects and blog posts, maybe use something else to not have to push posts and project-pages to this repo. Git submodules?
+- Maybe plug in a proper backend and database at some point, though I see no reason for this at the moment.

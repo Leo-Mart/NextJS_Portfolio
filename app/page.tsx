@@ -10,7 +10,7 @@ const HomePage = async () => {
     <Page>
       <Container>
         <header className="mb-0 flex flex-col items-stretch justify-between sm:px-8 md:mb-12 md:flex-row lg:mb-16 2xl:mb-20">
-          <section className="w-full md:w-5/12 pt-16">
+          <section className="w-full hidden md:block md:w-5/12 pt-16">
             <Image
               className="m-0 block h-full w-full object-cover rounded-lg p-0 grayscale priority"
               width={175}

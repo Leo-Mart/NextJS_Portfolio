@@ -15,14 +15,18 @@ const overpass = Overpass({
   weight: ["400", "500", "600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: {
-    template: `%s | ${config.name}`,
-    default: `I'm Martin Leo, a full-stack developer based in Sweden`,
-  },
-  authors: [{ name: config.name, url: config.url }],
-  creator: config.name,
-  description: "Portfolio page for Martin Leo, a developer from Swweden",
+const generateMetadata = async () => {
+  const metadata: Metadata = {
+    title: {
+      template: `%s | ${config.name}`,
+      default: `I'm Martin Leo, a full-stack developer based in Sweden`,
+    },
+    authors: [{ name: config.name, url: config.url }],
+    creator: config.name,
+    description: "Portfolio page for Martin Leo, a developer from Swweden",
+  };
+
+  return metadata;
 };
 
 interface Props {
@@ -40,4 +44,6 @@ const RootLayout = ({ children }: Props) => {
     </html>
   );
 };
+
+export { generateMetadata };
 export default RootLayout;

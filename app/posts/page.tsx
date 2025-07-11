@@ -2,6 +2,7 @@ import { getPosts } from "@/lib/posts";
 import Posts from "../components/Posts";
 import Page from "../components/layouts/Page";
 import Container from "../components/Container";
+import { Metadata } from "next";
 
 const PostsPage = async () => {
   const posts = await getPosts();
@@ -17,6 +18,11 @@ const PostsPage = async () => {
       </Container>
     </Page>
   );
+};
+
+export const metadata: Metadata = {
+  title: "Recent Posts",
+  description: "Here are some recent posts that I've written.",
 };
 
 export default PostsPage;

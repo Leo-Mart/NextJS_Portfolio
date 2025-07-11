@@ -4,6 +4,7 @@ import Page from "../components/layouts/Page";
 import Projects from "../components/Projects";
 import { getProjects } from "@/lib/projects";
 import Link from "next/link";
+import { Metadata } from "next";
 
 const ProjectsPage = async () => {
   const projects = await getProjects();
@@ -37,6 +38,11 @@ const ProjectsPage = async () => {
       </Container>
     </Page>
   );
+};
+
+export const metadata: Metadata = {
+  title: "Latest Work and Projects",
+  description: "The lastest projects that I've worked on.",
 };
 
 export default ProjectsPage;

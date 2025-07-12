@@ -27,6 +27,7 @@ const getProjectBySlug = async (slug: string): Promise<Project | null> => {
 
     return { metadata: { ...data, slug }, content };
   } catch (error) {
+    console.error(error);
     return null;
   }
 };

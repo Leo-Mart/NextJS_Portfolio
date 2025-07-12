@@ -7,6 +7,7 @@ import { formatDate } from "@/lib/utils";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Page from "@/app/components/layouts/Page";
 import Container from "@/app/components/Container";
+import { Metadata } from "next";
 
 const generateStaticParams = async () => {
   const posts = await getPosts();
@@ -15,7 +16,7 @@ const generateStaticParams = async () => {
   return slugs;
 };
 
-const Post = async ({ params }: { params: { slug: string } }) => {
+const Post = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
 
@@ -62,6 +63,9 @@ const Post = async ({ params }: { params: { slug: string } }) => {
       </Container>
     </Page>
   );
+};
+export const metadata: Metadata = {
+  title: "Post",
 };
 export { generateStaticParams };
 export default Post;

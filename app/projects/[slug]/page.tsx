@@ -8,6 +8,7 @@ import { formatDate } from "@/lib/utils";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Page from "@/app/components/layouts/Page";
 import Container from "@/app/components/Container";
+import { Metadata } from "next";
 
 const generateStaticParams = async () => {
   const posts = await getProjects();
@@ -16,7 +17,7 @@ const generateStaticParams = async () => {
   return slugs;
 };
 
-const Project = async ({ params }: { params: { slug: string } }) => {
+const Project = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const project = await getProjectBySlug(slug);
 
@@ -63,6 +64,9 @@ const Project = async ({ params }: { params: { slug: string } }) => {
       </Container>
     </Page>
   );
+};
+export const metadata: Metadata = {
+  title: "Project",
 };
 export { generateStaticParams };
 export default Project;

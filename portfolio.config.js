@@ -1,10 +1,10 @@
 const config = {
-  url: "temp.se",
+  url: "martinleo.dev",
   name: "Martin Leo",
   byline: "Fullstack Developer from Sweden",
   linkedInUrl: "https://www.linkedin.com/in/martin-leo-56b417296",
   githubUrl: "https://github.com/Leo-Mart",
-  email: "hey@test.se",
+  email: "martinleodev@gmail.com",
 };
 
 export default config;

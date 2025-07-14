@@ -26,8 +26,8 @@ const MoreInfo = () => {
           a rare joy.
         </p>
         <p>
-          If you want to know more &gt;{" "}
-          <Link className="underline" href="mailto:test@me.com">
+          Want to talk? &gt;{" "}
+          <Link className="underline" href="mailto:martinleodev@gmail.com">
             Send me an email
           </Link>
         </p>

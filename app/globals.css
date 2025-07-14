@@ -14,6 +14,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --color-everforest-light: #eae4ca;
+  --color-everforest-light-text: #5c6a72;
+  --color-everforest-dark: #333c43;
+  --color-everforest-dark-text: #d3c6aa;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

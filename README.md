@@ -28,7 +28,8 @@ While I have written all the code myself I took a lot of help and inspiration fr
 
 ## Future Improvements
 
-- FIx some styling for the MDX files.
+- Fix some styling for the MDX files.
+- Might want to build a custom MDXComponent at some point.
 - Potentially fully responsive design.
 - Keep adding new projects and blog posts, maybe use something else to not have to push posts and project-pages to this repo. Git submodules?
 - Maybe plug in a proper backend and database at some point, though I see no reason for this at the moment.

@@ -29,7 +29,7 @@ const Post = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
     <Page>
       <Container>
-        <section>
+        <section className="min-h-[80vh]">
           <div className="mx-auto max-w-3xl">
             <Link
               href="/posts"

@@ -7,7 +7,7 @@ interface Props {
 
 const Page = ({ children }: Props) => {
   return (
-    <div className="h-full bg-[#EAE4CA] text-[#5C6A72] dark:bg-[#333C43] dark:text-[#D3C6AA] transition-all duration-1000 ease-in-out">
+    <div className="h-full bg-everforest-light text-everforest-light-text dark:bg-everforest-dark dark:text-everforest-dark-text transition-all duration-1000 ease-in-out">
       <div className="min-h-full pb-4 md:pb-12">
         <Nav />
         {children}

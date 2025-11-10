@@ -24,11 +24,12 @@ const AboutPage = () => {
                   <li>HTMX</li>
                   <li>Go</li>
                   <li>Java</li>
+                  <li>Python</li>
                 </ul>
               </div>
 
               <div className="text-center flex-1 my-2">
-                <h3 className="text-2xl p-2">Dev Tools</h3>
+                <h3 className="text-2xl p-2">Dev Tools and Technologies</h3>
                 <ul>
                   <li>VsCode</li>
                   <li>Neovim</li>
@@ -37,6 +38,7 @@ const AboutPage = () => {
                   <li>NextJS</li>
                   <li>React</li>
                   <li>Tailwind</li>
+                  <li>Playwright</li>
                 </ul>
               </div>
             </div>

@@ -23,7 +23,7 @@ const generateMetadata = async () => {
     },
     authors: [{ name: config.name, url: config.url }],
     creator: config.name,
-    description: "Portfolio page for Martin Leo, a developer from Swweden",
+    description: "Portfolio page for Martin Leo, a developer from Sweden",
   };
 
   return metadata;
